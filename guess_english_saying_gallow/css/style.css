@@ -1,51 +1,50 @@
-    body {
-        background-color: black;
-        color: blanchedalmond;
-        font-size: 28px;
-        font-family: 'Courier Prime', monospace;
-    }
-    
-    .flexcontainer {
-        min-width: 760px;
-        display: flex;
-        /* align-items: center; */
-        /* justify-content: center; */
-        flex-wrap: wrap;
-        align-content: center;
-    }
-    
-    #field {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        text-align: center;
-        font-size: 48px;
-        min-height: 60px;
-    }
-    
-    .letter {
-        width: 30px;
-        height: 30px;
-        text-align: center;
-        padding: 5px;
-        margin: 5px;
-        border: 3px solid gray;
-        float: left;
-        cursor: pointer;
-        border-radius: 15px;
-    }
-    
-    .letter:hover {
-        background-color: #222222;
-        color: white;
-        border: 3px solid white;
-    }
-    
-    .reset {
-        color: green;
-        cursor: pointer;
-        font-size: 40px;
-    }
-    
-    .reset:hover {
-        color: white;
-    }
+        body {
+            background-color: black;
+            color: blanchedalmond;
+            font-size: 28px;
+            font-family: 'Courier Prime', monospace;
+        }
+        
+        .flexcontainer {
+            min-width: 760px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        #field {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+            font-size: 48px;
+            min-height: 60px;
+        }
+        
+        .letter {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            padding: 5px;
+            margin: 5px;
+            border: 3px solid gray;
+            float: left;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        
+        .letter:hover {
+            background-color: #222222;
+            color: white;
+            border: 3px solid white;
+        }
+        
+        .reset {
+            color: green;
+            cursor: pointer;
+            font-size: 40px;
+        }
+        
+        .reset:hover {
+            color: white;
+        }
