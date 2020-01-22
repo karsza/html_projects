@@ -12,10 +12,37 @@ let rows;
 let resolution = 20;
 
 let button1;
+let buttonMinus;
+let buttonPlus;
 let play = 1;
+let speed = 10;
 
 button1 = document.getElementById("button1");
 button1.addEventListener("click", function() { playPause() });
+
+buttonMinus = document.getElementById("buttonMinus");
+buttonMinus.addEventListener("click", function() {
+    slowDown();
+})
+buttonPlus = document.getElementById("buttonPlus");
+buttonPlus.addEventListener("click", function() {
+    accelerate();
+})
+
+function accelerate() {
+    speed += 2;
+    frameRate(speed);
+}
+
+function slowDown() {
+    speed -= 2;
+    if (speed < 0) {
+        speed = 0;
+    }
+    frameRate(speed);
+}
+
+
 
 function playPause() {
     if (play == 1) {
@@ -31,6 +58,7 @@ function playPause() {
 
 function setup() {
     createCanvas(600, 400);
+    frameRate(speed);
     cols = width / resolution;
     rows = height / resolution;
 
@@ -41,7 +69,6 @@ function setup() {
         }
     }
 }
-
 
 function draw() {
     background(0);
