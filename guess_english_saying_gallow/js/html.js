@@ -23,10 +23,9 @@ function showPassword() {
     document.getElementById("field").innerHTML = password1;
 };
 window.onload = function() {
-        showPassword();
-        start();
-    }
-    // window.onload = start;
+    showPassword();
+    start();
+}
 var letters = new Array(35);
 letters[0] = "A";
 letters[1] = "B";

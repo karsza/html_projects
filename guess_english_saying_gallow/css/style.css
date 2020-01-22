@@ -9,8 +9,13 @@
             min-width: 760px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: right;
             align-content: center;
+        }
+        
+        #gallows {
+            min-width: 350px;
+            
         }
         
         #field {

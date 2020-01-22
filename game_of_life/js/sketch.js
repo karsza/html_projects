@@ -10,7 +10,25 @@ let grid;
 let cols;
 let rows;
 let resolution = 20;
-// let width = 400;
+
+let button1;
+let play = 1;
+
+button1 = document.getElementById("button1");
+button1.addEventListener("click", function() { playPause() });
+
+function playPause() {
+    if (play == 1) {
+        noLoop();
+        play = 0;
+        button1.innerHTML = "Start";
+    } else {
+        loop();
+        play = 1;
+        button1.innerHTML = "Pause";
+    }
+}
+
 function setup() {
     createCanvas(600, 400);
     cols = width / resolution;
@@ -24,9 +42,9 @@ function setup() {
     }
 }
 
+
 function draw() {
     background(0);
-
 
     for (let i = 0; i < cols; i++) {
         for (let j = 0; j < rows; j++) {
